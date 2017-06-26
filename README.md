@@ -744,6 +744,12 @@ sudo openssl dhparam -out /etc/ssl/certs/dhparam.pem 2048
 
 - sudo nano /etc/nginx/sites-available/superset.conf
 ```
+server {
+	listen 80 default_server;
+	listen [::]:80 default_server;
+	server_name analysis.atidiv.com;
+	return 301 https://$server_name$request_uri;
+}
 
 server {
     listen 443 ssl;
