@@ -102,7 +102,7 @@ pip install --upgrade setuptools pip
 ```
 
 - Now do the actual setup and see if it works
-- [Follow instructions from here](http://airbnb.io/superset/installation.html)
+- [Follow instructions from here](https://superset.incubator.apache.org/installation.html)
 
 ```
 # Important note, don't use sudo on any of the below commands
